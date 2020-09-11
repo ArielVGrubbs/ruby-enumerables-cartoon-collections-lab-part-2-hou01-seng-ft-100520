@@ -25,14 +25,17 @@ end
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   first_valid_call = nil
-  planeteer_calls.select do |calls|
-    index = 0
-    while index < valid_calls.length do
-      if calls == valid_calls[index]
-        return calls
-      end
-      index += 1
-    end
+  planeteer_calls.find do |calls|
+    valid_calls.include?
   end
   first_valid_call
 end
+
+
+#index = 0
+#    while index < valid_calls.length do
+#      if calls == valid_calls[index]
+#        return calls
+#      end
+#      index += 1
+#    end

@@ -24,11 +24,9 @@ end
 
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
-  first_valid_call = nil
   planeteer_calls.find do |calls|
     valid_calls.include? calls
   end
-  first_valid_call
 end
 
 
